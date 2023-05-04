@@ -63,6 +63,10 @@ h2 {
   color: rgb(235, 43, 52);
 }
 
+.selected {
+  color: black !important;
+}
+
 .reset-icon {
   font-size: 30px;
   cursor: pointer;
