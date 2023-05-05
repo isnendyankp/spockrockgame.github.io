@@ -42,13 +42,14 @@ function computerRandomChoice() {
 }
 
 // Call functions to process turn
-function checkResult(playerChoice) {
+function checkResult() {
   resetSelected();
   computerRandomChoice();
 }
 
 // Passing player selection value and styling icons
 function select(playerChoice) {
+  checkResult();
   // Add 'selected' styling & playerChoice
   switch (playerChoice) {
     case 'rock':
