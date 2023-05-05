@@ -28,5 +28,29 @@ const choices = {
 
 // Passing player selection value and styling icons
 function select(playerChoice) {
-  console.log(playerChoice);
+  // Add 'selected' styling & playerChoice
+  switch (playerChoice) {
+    case 'rock':
+      playerRock.classList.add('selected');
+      playerChoiceEl.textContent = ' --- Rock';
+      break;
+    case 'paper':
+      playerPaper.classList.add('selected');
+      playerChoiceEl.textContent = ' --- Paper';
+      break;
+    case 'scissors':
+      playerScissors.classList.add('selected');
+      playerChoiceEl.textContent = ' --- Scissors';
+      break;
+    case 'lizard':
+      playerLizard.classList.add('selected');
+      playerChoiceEl.textContent = ' --- Lizard';
+      break;
+    case 'spock':
+      playerSpock.classList.add('selected');
+      playerChoiceEl.textContent = ' --- Spock';
+      break;
+    default:
+      break;
+  }
 }
