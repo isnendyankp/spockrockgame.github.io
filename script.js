@@ -85,6 +85,7 @@ function displayComputerChoice() {
 function checkResult() {
   resetSelected();
   computerRandomChoice();
+  displayComputerChoice();
 }
 
 // Passing player selection value and styling icons
