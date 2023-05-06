@@ -38,7 +38,18 @@ function resetSelected() {
 // Random computer choice
 function computerRandomChoice() {
   const computerChoiceNumber = Math.random();
-  console.log(computerChoiceNumber);
+  if (computerChoiceNumber < 0.2) {
+    computerChoice = 'rock';
+  } else if (computerChoiceNumber <= 0.4) {
+    computerChoice = 'paper';
+  } else if (computerChoiceNumber <= 0.6) {
+    computerChoice = 'scissors';
+  } else if (computerChoiceNumber <= 0.8) {
+    computerChoice = 'lizard';
+  } else {
+    computerChoice = 'spock';
+  }
+  console.log(computerChoice);
 }
 
 // Call functions to process turn
