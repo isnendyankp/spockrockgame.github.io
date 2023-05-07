@@ -90,6 +90,11 @@ function updateScore(playerChoice) {
   } else {
     const choice = choices[playerChoice];
     console.log(choice.defeats.indexOf(computerChoice));
+    if (choice.defeats.indexOf(computerChoice) > -1) {
+      resultText.textContent = 'You Won!';
+      playerScoreNumber++;
+      playerScoreEl.textContent = playerScoreNumber;
+    }
   }
 }
 
