@@ -36,6 +36,7 @@ function resetSelected() {
     icon.classList.remove('selected');
   });
   stopConfetti();
+  removeConfetti();
 }
 
 // Reset score & playerChoice/computerChoice
