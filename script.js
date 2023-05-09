@@ -159,6 +159,7 @@ function select(playerChoice) {
 
 // On startup, set initial values
 resetAll();
+startConfetti();
 
 
 
