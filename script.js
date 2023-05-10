@@ -53,6 +53,7 @@ function resetAll() {
   resetSelected();
 }
 
+window.resetAll = resetAll;
 
 // Random computer choice
 function computerRandomChoice() {
@@ -157,9 +158,11 @@ function select(playerChoice) {
   }
 }
 
+window.select = select
+
 // On startup, set initial values
 resetAll();
-startConfetti();
+// startConfetti();
 
 
 
